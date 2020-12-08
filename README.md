@@ -11,5 +11,8 @@ Skeleton3D https://www.mathworks.com/matlabcentral/fileexchange/43400-skeleton3d
 - Kollmannsberger, Kerschnitzki et al., "The small world of osteocytes: connectomics of the lacuno-canalicular network in bone." New Journal of Physics 19:073019, 2017.
 Skel2Graph 3D https://www.mathworks.com/matlabcentral/fileexchange/43527-skel2graph-3d
 
+For handling NIfTI files, the following toolbox is necessary:
+- Jimmy Shen (2020). Tools for NIfTI and ANALYZE image (https://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image), MATLAB Central File Exchange. Retrieved December 8, 2020.
+
 The algorithm requires a CT image as an input, it accepts '.nii.gz' or '.nii' formats.
 The results of each step are saved in an appropriately named '.nii' file.
