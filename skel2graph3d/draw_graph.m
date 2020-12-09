@@ -37,7 +37,7 @@ for i=1:length(node)
     plot3(y1,x1,z1,'o','Markersize',9,...
         'MarkerFaceColor',ncol,...
         'Color','k');
-    text(y1,x1,z1,string(i)); % ott lesznek a labelek a node-ok mellett
+    text(y1,x1,z1,string(i));
 end
 axis image;axis off;
 set(gcf,'Color','white');
