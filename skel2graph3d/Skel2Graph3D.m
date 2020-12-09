@@ -86,8 +86,7 @@ for i=1:cc2.NumObjects
     node(i).ep = 0;
     node(i).label = lm(node(i).idx(1));
     node(i).gen = 0; %generation
-    node(i).beenThere = false; %voltunk-e mar ott a grafbejarasnal
-    node(i).lobe = " "; %melyik tudolebenyhez tartozik
+    node(i).beenThere = false;
    
     % assign index to node voxels
     skel2(node(i).idx) = i+1;
@@ -110,8 +109,7 @@ for i=1:cc3.NumObjects
     node(ni).ep = 1;
     node(ni).label = lm(node(ni).idx(1));
     node(ni).gen = 0; %generation
-    node(ni).beenThere = false; %voltunk-e mar ott a grafbejarasnal
-    node(ni).lobe = " "; %melyik tudolebenyhez tartozik
+    node(ni).beenThere = false;
 
     % assign index to node voxels
     skel2(node(ni).idx) = ni+1;
@@ -151,9 +149,9 @@ for i=1:length(node)
                 link(l_idx).n2 = n_idx; % node number
                 link(l_idx).point = vox;
                 link(l_idx).label = lm(vox(1));
-                link(l_idx).colour = 'k'; % szin
+                link(l_idx).colour = 'k';
                 link(l_idx).gen = 0; %generation
-                link(l_idx).beenThere = false; %voltunk-e mar ott a grafbejarasnal
+                link(l_idx).beenThere = false;
 		node(i).links = [node(i).links, l_idx];
                 node(i).conn = [int16(node(i).conn), int16(n_idx)];
                 node(n_idx).links = [node(n_idx).links, l_idx];
@@ -171,9 +169,9 @@ for i=1:length(node)
                     link(l_idx).n2 = n_idx; % node number
                     link(l_idx).point = ep_cands(k);
                     link(l_idx).label = lm(ep_cands(k));
-                    link(l_idx).colour = 'r'; % szin
+                    link(l_idx).colour = 'r';
                     link(l_idx).gen = 0; %generation
-                    link(l_idx).beenThere = false; %voltunk-e mar ott a grafbejarasnal
+                    link(l_idx).beenThere = false;
                     node(i).links = [node(i).links, l_idx];
                     node(i).conn = [int16(node(i).conn), int16(n_idx)];
                     node(n_idx).links = [node(n_idx).links, l_idx];
