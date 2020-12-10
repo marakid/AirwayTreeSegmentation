@@ -14,5 +14,5 @@ Skel2Graph 3D https://www.mathworks.com/matlabcentral/fileexchange/43527-skel2gr
 For handling NIfTI files, the following toolbox is necessary:
 - Jimmy Shen (2020). Tools for NIfTI and ANALYZE image (https://www.mathworks.com/matlabcentral/fileexchange/8797-tools-for-nifti-and-analyze-image), MATLAB Central File Exchange. Retrieved December 8, 2020.
 
-To use this algorithm, you have to run the 'AirwayTreeSegmentation.m' file. It requires a CT image as an input, in '.nii.gz' or '.nii' format.
+To use this algorithm, you have to run the 'AirwayTreeSegmentationFromCT.m' file. It requires a CT image as an input, in '.nii.gz' or '.nii' format.
 The results of each step are saved in an appropriately named '.nii' file.
